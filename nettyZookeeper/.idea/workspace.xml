@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ecbeb35-7dc7-4e54-ba4d-82fa273a3690" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/nettyRpc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/myZookeeper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/myZookeeper_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/myZookeeper_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/netty/EchoServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/AsyncRPCCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/ConnectManage$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/ConnectManage$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/ConnectManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RPCFuture$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RPCFuture$Sync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RPCFuture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RpcClientHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RpcClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/client/RpcClientInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/common/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/common/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/constant/ZookeeperConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/proxy/IAsyncObjectProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/proxy/ObjectProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/registry/ServiceDiscovery$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/registry/ServiceDiscovery$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/registry/ServiceDiscovery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/registry/ServiceRegistry$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/registry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcHandler$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/server/RpcService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/test/ClientTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/test/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/test/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/utils/RpcDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/utils/RpcEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nettyrpc/utils/SerializationUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nio/MultiplexerTimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nio/TimeClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nio/TimeClientHandle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/nio/TimeServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/proxyreflect/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/proxyreflect/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/proxyreflect/Proxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/proxyreflect/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/socket/GetDataServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/socket/ServiceClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/socket/ServiceServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/socket/ServiceServerTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/zookeeper/CuratorTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/zookeeper/CuratorTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/zookeeper/CuratorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/zookeeper/zookeeperSelfTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wenbing/zookeeper/zookeeperSelfTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/app/ClientTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/app/ServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/client/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/client/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/client/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/client/PersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/server/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/server/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/server/PersonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/wenbing/nettyrpc/test/server/RpcBootstrap.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1irUgrGVMcL5WK1jKZxr7nxaWiM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3448276" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wenbing" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wenbing.nettyrpc.client" />
+      <recent name="com.wenbing.nettyrpc.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea\myZookeeper\src" />
+      <recent name="D:\idea\myZookeeper\src\main\java\com\wenbing\nettyrpc" />
+      <recent name="D:\idea\myZookeeper\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ServiceServer">
+    <configuration name="RpcBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wenbing.nettyrpc.test.server.RpcBootstrap" />
+      <module name="myZookeeper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wenbing.nettyrpc.test.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wenbing.socket.ServiceServer" />
+      <module name="myZookeeper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wenbing.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest.getPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myZookeeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wenbing.nettyrpc.test.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wenbing.nettyrpc.test.app" />
+      <option name="MAIN_CLASS_NAME" value="com.wenbing.nettyrpc.test.app.ClientTest" />
+      <option name="METHOD_NAME" value="getPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RpcBootstrap" />
+      <item itemvalue="JUnit.ClientTest.getPrice" />
+      <item itemvalue="Application.ServiceServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServiceServer" />
+        <item itemvalue="JUnit.ClientTest.getPrice" />
+        <item itemvalue="Application.RpcBootstrap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ecbeb35-7dc7-4e54-ba4d-82fa273a3690" name="Default" comment="" />
+      <created>1540448381346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540448381346</updated>
+      <workItem from="1540448384166" duration="16928000" />
+      <workItem from="1540555207668" duration="958000" />
+      <workItem from="1540622742179" duration="590000" />
+      <workItem from="1540982007639" duration="3432000" />
+      <workItem from="1541058712209" duration="12344000" />
+      <workItem from="1541129647881" duration="1027000" />
+      <workItem from="1541130893578" duration="1368000" />
+      <workItem from="1541255490000" duration="6803000" />
+      <workItem from="1541292748910" duration="11879000" />
+      <workItem from="1541327169356" duration="5080000" />
+      <workItem from="1541332346419" duration="12054000" />
+      <workItem from="1541388347823" duration="9230000" />
+      <workItem from="1541593667355" duration="5030000" />
+      <workItem from="1602665320143" duration="2484000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ClientTest_getPrice - 2018.11.05 at 13h 00m 05s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.05 at 13h 01m 27s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.05 at 13h 02m 00s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.05 at 13h 16m 33s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 13m 41s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 38m 06s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 40m 52s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 43m 11s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 43m 43s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest_getPrice - 2018.11.07 at 21h 45m 28s.xml">
+      <configuration name="ClientTest.getPrice" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="307" y="28" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1602665333580">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="307" y="28" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1602665333580" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1602665764027">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602665764027" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wenbing/netty/EchoServerHandler.java</url>
+          <line>21</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/wenbing/nettyrpc/test/app/ClientTest.java</url>
+          <line>24</line>
+          <properties class="com.wenbing.nettyrpc.test.app.ClientTest" method="getPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
