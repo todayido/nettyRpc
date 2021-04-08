@@ -78,14 +78,17 @@ public class TimeClientHandle implements Runnable {
 
     private void doWriter(SocketChannel sc) throws IOException {
         byte[] req = "QUERY TIME ORDER".getBytes();
-        ByteBuffer writeBuffer = ByteBuffer.allocate(1024);
-        writeBuffer.put(req);
-        writeBuffer.flip();
-        sc.write(writeBuffer);
-        if (!writeBuffer.hasRemaining()) {
-            System.out.println("Send order 2 server succeed.");
-        }
-
+//        for (int i = 0; i < 100; i++) { // 如果是循环数据的话，会发生粘包问题。
+//        Todo
+            ByteBuffer writeBuffer = ByteBuffer.allocate(1024);
+//            System.out.println("写入数据: " + i);
+            writeBuffer.put(req);
+            writeBuffer.flip();
+            sc.write(writeBuffer);
+            if (!writeBuffer.hasRemaining()) {
+                System.out.println("Send order 2 server succeed.");
+            }
+//        }
     }
 
     private void handleInput(SelectionKey key) throws IOException {

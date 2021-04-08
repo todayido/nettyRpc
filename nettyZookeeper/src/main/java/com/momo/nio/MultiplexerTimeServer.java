@@ -102,11 +102,9 @@ public class MultiplexerTimeServer implements Runnable {
                     byte[] bytes = new byte[readBuffer.remaining()];
                     readBuffer.get(bytes);
                     String body = new String(bytes, "UTF-8");
-                    System.out.println("The time server receive order : " + body);
+                    System.out.println("The time server receive order : " + body+"==========="+body.getBytes().length);
                     //将当前时间发回去
-                    String currentTime = "QUERY TIME ORDER"
-                            .equalsIgnoreCase(body) ? new java.util.Date(
-                            System.currentTimeMillis()).toString() : "BAD ORDER";
+                    String currentTime = "QUERY TIME ORDER".equalsIgnoreCase(body) ? new java.util.Date(System.currentTimeMillis()).toString() : "BAD ORDER";
                     doWrite(sc, currentTime);
                 } else if (readBytes < 0) {
 //                    对端链路关闭
