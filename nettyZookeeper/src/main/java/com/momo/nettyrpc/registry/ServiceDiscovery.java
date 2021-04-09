@@ -17,7 +17,7 @@ import java.util.concurrent.CountDownLatch;
 /**
  * 服务发现
  *
- * @author 沈文兵
+ * @author Eric
  */
 public class ServiceDiscovery {
     private static final Logger logger = LoggerFactory.getLogger(ServiceDiscovery.class);
@@ -51,7 +51,7 @@ public class ServiceDiscovery {
             });
             latch.await();
         } catch (IOException | InterruptedException e) {
-            logger.error("", e);
+        logger.error("", e);
         }
         return zk;
     }
