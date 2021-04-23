@@ -15,7 +15,7 @@ public class CuratorTest {
 
 //    psvm快捷键main方法生成
     public static void main(String[] args) throws Exception {
-        CuratorFramework client = CuratorFrameworkFactory.newClient("192.168.159.128:2181", new RetryNTimes(10, 5000));
+        CuratorFramework client = CuratorFrameworkFactory.newClient("127.0.0.1:2181", new RetryNTimes(10, 5000));
 //        连接
         client.start();
 //        获取子节点，顺便监控子节点
