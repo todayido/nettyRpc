@@ -43,9 +43,9 @@ public class RPCFuture implements Future<Object> {
 
     @Override
     public Object get() throws InterruptedException, ExecutionException {
-        sync.acquire(-1);
+        sync.acquire(-1);// 模板模式，先调用自己实现的tryAcquire方法，返回true,父类中的acquire(null, arg, false, false, false, 0L);就不会再执行了。
         if (this.response != null) {
-            return this.response.getResult();
+            return this.response.getResult();// 返回结果，这笔交易就完成了。如果继续调用rpc那么还是会在生成一个RPCFuture，再重复一遍操作（发送，返回，释放锁，get结果。）。
         } else {
             return null;
         }
@@ -77,10 +77,11 @@ public class RPCFuture implements Future<Object> {
         throw new UnsupportedOperationException();
     }
 
+    // rpc调用完这个方法之后，会释放锁，然后get方法就可以继续往下执行，返回结果。
     public void done(RpcResponse reponse) {
         this.response = reponse;
-        sync.release(1);
-        invokeCallbacks();
+        sync.release(1);// 远程接口返回，将state设置为done(1)，此时get方法就可以继续执行了。
+        invokeCallbacks();// get方法的执行和这个回调没有关系，如果添加了回调就执行，但是此处没有任何回调方法，后期可以做一些其他的相关事务处理
         // Threshold
         long responseTime = System.currentTimeMillis() - startTime;
         if (responseTime > this.responseTimeThreshold) {
@@ -88,17 +89,19 @@ public class RPCFuture implements Future<Object> {
         }
     }
 
+    // 添加回调函数必须是同步的，此处使用ReentrantLock
     private void invokeCallbacks() {
         lock.lock();
         try {
             for (final AsyncRPCCallback callback : pendingCallbacks) {
-                runCallback(callback);
+                runCallback(callback);// 提交线程任务，线程池的大小是16。
             }
-        } finally {
+        } finally {// 此处使用ReentrantLock和finally必须是成对出现的。
             lock.unlock();
         }
     }
 
+    // 添加回调函数必须是同步的，此处使用ReentrantLock
     public RPCFuture addCallback(AsyncRPCCallback callback) {
         lock.lock();
         try {
@@ -143,7 +146,7 @@ public class RPCFuture implements Future<Object> {
         @Override
         protected boolean tryRelease(int arg) {
             if (getState() == pending) {
-                if (compareAndSetState(pending, done)) {
+                if (compareAndSetState(pending, done)) {// U.compareAndSetInt(this, STATE, expect, update);
                     return true;
                 } else {
                     return false;
