@@ -1,5 +1,6 @@
 package com.momo.nettyrpc.registry;
 
+import com.alibaba.fastjson.JSON;
 import com.momo.nettyrpc.constant.ZookeeperConstant;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
@@ -33,7 +34,7 @@ public class ServiceRegistry {
                 AddRootNode(zk);//如果不存在node，先创建
                 createNode(zk, data);
             }
-            System.out.println("服务注册了......");
+            System.out.println("注册服务:"+ JSON.toJSON(data));
         }
     }
 
@@ -76,7 +77,7 @@ public class ServiceRegistry {
             byte[] bytes = data.getBytes();
             String path = zk.create(ZookeeperConstant.ZK_DATA_PATH, bytes, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
             logger.debug("创建临时有序节点:",path,data);
-            System.out.println("临时节点创建成功......");
+            System.out.println("临时节点创建成功:" + JSON.toJSON(data));
         } catch (InterruptedException e) {
             logger.error(e.toString());
         } catch (KeeperException ex) {

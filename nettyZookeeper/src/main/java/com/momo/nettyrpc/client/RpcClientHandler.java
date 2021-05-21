@@ -38,14 +38,15 @@ public class RpcClientHandler extends SimpleChannelInboundHandler<RpcResponse> {
         super.channelRegistered(ctx);
         this.channel = ctx.channel();
     }
+
     //从服务器接收到数据后调用
     @Override
     public void channelRead0(ChannelHandlerContext ctx, RpcResponse response) throws Exception {
         String requestId = response.getRequestId();
         RPCFuture rpcFuture = pendingRPC.get(requestId);
         if (rpcFuture != null) {
-            pendingRPC.remove(requestId);
-            rpcFuture.done(response);
+            pendingRPC.remove(requestId);// sendRequest的时候放入HashMap
+            rpcFuture.done(response);// 完成时候释放锁
         }
     }
 
@@ -59,7 +60,7 @@ public class RpcClientHandler extends SimpleChannelInboundHandler<RpcResponse> {
         channel.writeAndFlush(Unpooled.EMPTY_BUFFER).addListener(ChannelFutureListener.CLOSE);
     }
 
-    public RPCFuture sendRequest(RpcRequest request) {
+    public RPCFuture  sendRequest(RpcRequest request) {
         final CountDownLatch latch = new CountDownLatch(1);
         RPCFuture rpcFuture = new RPCFuture(request);
         pendingRPC.put(request.getRequestId(), rpcFuture);

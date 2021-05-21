@@ -2,10 +2,10 @@ package com.momo.nettyrpc.test.app;
 
 
 import com.momo.nettyrpc.client.RPCFuture;
+import com.momo.nettyrpc.client.RpcClient;
 import com.momo.nettyrpc.proxy.IAsyncObjectProxy;
 import com.momo.nettyrpc.test.client.HelloService;
 import com.momo.nettyrpc.test.client.OrderService;
-import com.momo.nettyrpc.client.RpcClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +35,4 @@ public class ClientTest {
         int price = orderService.getPrice(20);
         System.out.println("最后结果这里打印了----->" + price);
     }
-
-
 }

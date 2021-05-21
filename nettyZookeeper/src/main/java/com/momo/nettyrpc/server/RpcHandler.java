@@ -33,22 +33,21 @@ public class RpcHandler extends SimpleChannelInboundHandler<RpcRequest> {
         RpcServer.submit(new Runnable() {
             @Override
             public void run() {
-                logger.info(request.toString()+"哈哈哈");
-                logger.info("Receive request -->"+request.getRequestId());
+                logger.info("Receive request --> "+request.getRequestId());
                 RpcResponse response = new RpcResponse();
                 response.setRequestId(request.getRequestId());
                 try {
                     Object result = handle(request);
-                    System.out.println("处理的结果为:"+result);
+                    logger.info("Request resut --> "+result);
                     response.setResult(result);
                 } catch (Throwable t) {
                     response.setError(t.toString());
-                    logger.error("RPC服务端处理器处理request出错",t);
+                    logger.error("handling request errors --> ",t);
                 }
                 ctx.writeAndFlush(response).addListener(new ChannelFutureListener() {
                     @Override
                     public void operationComplete(ChannelFuture channelFuture) throws Exception {
-                        logger.info("send response for request :"+request.getRequestId());
+                        logger.info("send response for request --> "+request.getRequestId());
                     }
                 });
             }
