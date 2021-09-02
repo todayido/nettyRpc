@@ -24,7 +24,7 @@ public class TestExport {
     JScrollPane scrollPane;
     // 创建表格中的横标题
     String[] titles = { " - ", " - " };
-    Object[][] contents = {/* 创建表格中的数据*/ {"00000000", "哈哈哈..."}};
+    Object[][] contents = {/* 创建表格中的数据*/ {"00000000", "哈哈哈"}};
 
     DefaultTableModel newtablemodel = new DefaultTableModel();
 
