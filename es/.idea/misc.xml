@@ -11,7 +11,14 @@
         <option value="$PROJECT_DIR$/../rpcFuture/pom.xml" />
         <option value="$PROJECT_DIR$/../imomo/pom.xml" />
         <option value="$PROJECT_DIR$/../installJar/pom.xml" />
+        <option value="$PROJECT_DIR$/../testNetty/pom.xml" />
+        <option value="$PROJECT_DIR$/../sNettyClient/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../testNetty/nettyServer/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="adopt-openjdk-1.8" project-jdk-type="JavaSDK" />

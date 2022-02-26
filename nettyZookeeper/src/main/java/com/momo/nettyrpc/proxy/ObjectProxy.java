@@ -64,7 +64,7 @@ public class ObjectProxy<T> implements InvocationHandler, IAsyncObjectProxy {
     @Override
     public RPCFuture call(String funcName, Object... args) {
         RpcClientHandler handler = ConnectManage.getInstance().chooseHandler();
-        System.out.println("获取了handler,对应服务器地址为"+handler.getRemotePeer());
+//        System.out.println("获取了handler,对应服务器地址为"+handler.getRemotePeer());
         RpcRequest request = createRequest(this.clazz.getName(), funcName, args);
         RPCFuture rpcFuture = handler.sendRequest(request);
         return rpcFuture;

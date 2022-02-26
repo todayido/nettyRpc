@@ -8,14 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="excel" />
-        <module name="nettyZookeeper" />
-        <module name="sNetty" />
         <module name="rpcFuture" />
+        <module name="sNettyClient" />
+        <module name="nettyZookeeper" />
         <module name="es" />
+        <module name="nettyClient" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="installJar" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -23,16 +23,20 @@ public class ClientTest {
 
     @Test
     public void getPrice() {
-        OrderService orderService = rpcClient.create(OrderService.class);
-        IAsyncObjectProxy async = rpcClient.createAsync(HelloService.class);
-        RPCFuture rpcFuture = async.call("hello", "小红");
-        try {
-            Object o = rpcFuture.get();
-            System.out.println(o+"kkk");
-        } catch (ExecutionException | InterruptedException e) {
-            e.printStackTrace();
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < 10000; i++) {
+//            OrderService orderService = rpcClient.create(OrderService.class);
+            IAsyncObjectProxy async = rpcClient.createAsync(HelloService.class);
+            RPCFuture rpcFuture = async.call("hello", "小红");
+            try {
+                Object o = rpcFuture.get();
+            } catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
+//            int price = orderService.getPrice(i);
+//            System.out.println(price);
         }
-        int price = orderService.getPrice(20);
-        System.out.println("最后结果这里打印了----->" + price);
+        System.out.println("========= 调用一千次耗时：" + (System.currentTimeMillis() - start));
+
     }
 }
